@@ -276,7 +276,7 @@ class RegisterScreen extends StatelessWidget {
                                   primary: Colors.purple),
                               onPressed: () {
                                 if (UsersAuthCubit.get(context).imageFile !=
-                                    null) {
+                                    null) {if(_formKey.currentState!.validate()){return;}
                                   UsersAuthCubit.get(context).userRegister(
                                       userFirstName: firstName.text,
                                       userLastName: lastName.text,
