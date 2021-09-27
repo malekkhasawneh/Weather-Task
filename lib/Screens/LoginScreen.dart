@@ -84,7 +84,7 @@ class LoginScreen extends StatelessWidget {
                           }
                           return null;
                         },
-                        controller: password,
+                        controller: password,obscureText: true,
                         decoration: InputDecoration(
                           prefixIcon: Icon(Icons.password),
                           labelText: "Password",
