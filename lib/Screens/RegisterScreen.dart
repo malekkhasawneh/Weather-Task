@@ -191,7 +191,7 @@ class RegisterScreen extends StatelessWidget {
                           return 'Password is too short';
                         }
                         return null;
-                      },
+                      }, obscureText: true,
                       controller: password,
                       decoration: InputDecoration(
                         prefixIcon: Icon(Icons.password),
@@ -221,7 +221,7 @@ class RegisterScreen extends StatelessWidget {
                           return 'password does not match';
                         }
                         return null;
-                      },
+                      },obscureText: true,
                       controller: rePassword,
                       decoration: InputDecoration(
                         prefixIcon: Icon(Icons.password),
